@@ -1,14 +1,14 @@
 const q02 = () => {
-  interface Foo {
-    bar: string;
-    baz: number;
-  }
+  type Foo = {
+    name?: string;
+    age?: number;
+  };
 
-  type PartialFoo = Partial<Foo>;
+  type RequiredFoo = Required<Foo>;
 
   // 別解
-  type Optionals<T> = {
-    [K in keyof T]?: T[K];
+  type RequiredType<T> = {
+    [K in keyof T]-?: T[K];
   };
-  type OptionalFoo = Optionals<Foo>;
+  type altRequiredFoo = RequiredType<Foo>;
 };
