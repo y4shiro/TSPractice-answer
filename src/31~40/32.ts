@@ -1,4 +1,4 @@
-const q31 = () => {
+const q32 = () => {
   type F = {
     foo: string;
     bar: number;
