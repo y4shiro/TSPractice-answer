@@ -17,5 +17,5 @@ const q63 = () => {
   type Foo = OneOf<typeof values>;
 
   const v1: Foo = 'A'; // ok
-  const v2: Foo = 'D'; // error
+  // const v2: Foo = 'D'; // error
 };
