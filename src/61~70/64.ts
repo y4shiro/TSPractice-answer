@@ -7,5 +7,5 @@ const q64 = () => {
   };
   const a: Record<keyof typeof source, string> = source;
 
-  const aa = a['name']; // error
+  // const aa = a['name']; // error
 };
